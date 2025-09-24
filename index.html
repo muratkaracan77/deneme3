@@ -4,7 +4,7 @@
     <title>AR Deneyimi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         body { margin: 0; }
         model-viewer {
@@ -16,9 +16,8 @@
 <body>
     <model-viewer
         src="dolap.glb"
-        ios-src="dolap.usdz"
         ar
-        ar-modes="webxr scene-viewer quick-look"
+        ar-modes="scene-viewer quick-look webxr"
         camera-controls
         shadow-intensity="1">
     </model-viewer>
